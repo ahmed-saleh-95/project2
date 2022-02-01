@@ -1,0 +1,103 @@
+:root{
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+--Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+--Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    background-color: hsl(0, 0%, 95%);
+}
+
+h1 {
+    font-family: 'Big Shoulders Display',sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 35px;
+    color: var(--Very-light-gray-background-headings-buttons);
+}
+p {
+    font-family: 'Lexend Deca',sans-serif;
+    line-height: 25.6px;
+    padding-top: 30px;
+    color: var(--Transparent-white-paragraphs);
+}
+
+.container {
+    width: 950px;
+    height: 500px;
+    display: flex;
+}
+
+.sedans {
+    background-color: var(--Bright-orange);
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    display: block;
+    height: 470px;
+    width: 300px;
+    padding: 40px;
+}
+
+.SUVs {
+    background-color:var(--Dark-cyan);
+    display: block;
+    height: 470px;
+    width: 300px;
+    padding: 40px;
+}
+
+.luxury {
+    background-color:var(--Very-dark-cyan);
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    display: block;
+    height: 470px;
+    width: 300px;
+    padding: 40px;
+}
+
+button {
+    margin-top: 40px;
+    background-color: var(--Very-light-gray-background-headings-buttons);
+    border: 2px solid var(--Very-light-gray-background-headings-buttons);
+    width: 150px;
+    height: 40px;
+    border-radius: 144px;
+    transition: 0.2s ease;
+    text-align: center;
+    font-family:'Lexend Deca', sans-serif;
+}
+
+button:hover{
+    transition: .3s ease;
+    background-color: transparent;
+    color: var(--Transparent-white-paragraphs);
+}
+.button1 {
+    color: var(--Bright-orange);
+}
+
+.button2{
+    color: var(--Dark-cyan);
+}
+
+.button3 {
+    color: var(--Very-dark-cyan);
+}
+
